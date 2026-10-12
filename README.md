@@ -18,6 +18,7 @@
 | [lesson_12](https://github.com/Resolushh/Computer-networks/tree/lesson_12) | Конспект по DHCP |
 | [lesson_13](https://github.com/Resolushh/Computer-networks/tree/lesson_13) | NAT и доступ к локальному веб-серверу |
 | [lesson_14](https://github.com/Resolushh/Computer-networks/tree/lesson_14) | DNS и веб-сервер: 5 ПК и один сервер |
+| [lesson_15](https://github.com/Resolushh/Computer-networks/tree/lesson_15) | Транспортный уровень: TCP и UDP |
 | [practise_work](https://github.com/Resolushh/Computer-networks/tree/practise_work) | Самостоятельная работа по основам сетей |
 
 ## Просмотр работы
