@@ -17,6 +17,7 @@
 | [lesson_11](https://github.com/Resolushh/Computer-networks/tree/lesson_11) | Работа по теме RIP и проверка связи |
 | [lesson_12](https://github.com/Resolushh/Computer-networks/tree/lesson_12) | Конспект по DHCP |
 | [lesson_13](https://github.com/Resolushh/Computer-networks/tree/lesson_13) | NAT и доступ к локальному веб-серверу |
+| [lesson_14](https://github.com/Resolushh/Computer-networks/tree/lesson_14) | DNS и веб-сервер: 5 ПК и один сервер |
 | [practise_work](https://github.com/Resolushh/Computer-networks/tree/practise_work) | Самостоятельная работа по основам сетей |
 
 ## Просмотр работы
