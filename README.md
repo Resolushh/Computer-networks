@@ -1,32 +1,37 @@
-# Компьютерные сети
+# Занятие 16 — Анализ TCP и UDP в Wireshark
 
-Репозиторий содержит учебные задания, схемы сетей и конспекты. Каждая учебная ветка посвящена отдельной работе и имеет собственный README с описанием материалов и результатов.
+## Задание
 
-## Навигация по веткам
+Подготовить три скриншота Wireshark: два TCP-пакета с разными наборами флагов и один UDP-пакет.
 
-| Ветка | Тема |
-|---|---|
-| [lesson_2](https://github.com/Resolushh/Computer-networks/tree/lesson_2) | Сетевые неисправности и уровни OSI |
-| [lesson_3](https://github.com/Resolushh/Computer-networks/tree/lesson_3) | Захват и разбор трафика в Wireshark |
-| [lesson_4](https://github.com/Resolushh/Computer-networks/tree/lesson_4) | MAC-адреса, коммутация и поиск неисправностей |
-| [lesson_5](https://github.com/Resolushh/Computer-networks/tree/lesson_5) | Расчёт маски подсети и построение сети |
-| [lesson_6](https://github.com/Resolushh/Computer-networks/tree/lesson_6) | Проверка ping и прохождение ICMP |
-| [lesson_7](https://github.com/Resolushh/Computer-networks/tree/lesson_7) | Правила брандмауэра для Packet Tracer |
-| [lesson_8](https://github.com/Resolushh/Computer-networks/tree/lesson_8) | Деление IPv4-сетей на подсети |
-| [lesson_9](https://github.com/Resolushh/Computer-networks/tree/lesson_9) | Топологии с маршрутизаторами |
-| [lesson_11](https://github.com/Resolushh/Computer-networks/tree/lesson_11) | Работа по теме RIP и проверка связи |
-| [lesson_12](https://github.com/Resolushh/Computer-networks/tree/lesson_12) | Конспект по DHCP |
-| [lesson_13](https://github.com/Resolushh/Computer-networks/tree/lesson_13) | NAT и доступ к локальному веб-серверу |
-| [lesson_14](https://github.com/Resolushh/Computer-networks/tree/lesson_14) | DNS и веб-сервер: 5 ПК и один сервер |
-| [lesson_15](https://github.com/Resolushh/Computer-networks/tree/lesson_15) | Транспортный уровень: TCP и UDP |
-| [practise_work](https://github.com/Resolushh/Computer-networks/tree/practise_work) | Самостоятельная работа по основам сетей |
+## Результаты
 
-## Просмотр работы
+Захват выполнен на интерфейсе Ethernet. Для просмотра использованы фильтры `tcp` и `udp`. В нижней панели раскрыты поля выбранных пакетов.
 
-Выберите ветку в интерфейсе GitHub или переключитесь на неё локально, например:
+| Скриншот | Пакет | Протокол и флаги | Источник → получатель |
+|---|---|---|---|
+| [1. TCP ACK](screenshots/01-tcp-ack.png) | № 11 | TCP, `0x010 (ACK)` | `192.168.3.6:60076 → 193.233.112.68:443` |
+| [2. TCP SYN, ACK](screenshots/02-tcp-syn-ack.png) | № 4396 | TCP, `0x012 (SYN, ACK)` | `4.176.49.0:443 → 192.168.3.6:61440` |
+| [3. UDP](screenshots/03-udp.png) | № 4481 | UDP | `104.29.156.0:19318 → 192.168.3.6:57147` |
 
-```bash
-git switch lesson_13
-```
+### 1. TCP с флагом ACK
 
-В README каждой ветки описаны тема, ход работы и результаты. Изображения показывают сетевые схемы и проверки связи, а PDF и Markdown содержат конспекты, расчёты и ответы на задания.
+В пакете № 11 установлен флаг ACK: поле подтверждения действительно. Флаги SYN и FIN не установлены. Пакет также переносит 1400 байт данных; номер подтверждения — 1 (относительное значение Wireshark).
+
+![TCP-пакет № 11: раскрыты Flags 0x010 (ACK)](screenshots/01-tcp-ack.png)
+
+### 2. TCP с флагами SYN и ACK
+
+В пакете № 4396 установлены SYN и ACK — ответ сервера при установлении TCP-соединения. В раскрытом поле Flags видно значение `0x012 (SYN, ACK)`. Длина полезной нагрузки TCP — 0 байт.
+
+![TCP-пакет № 4396: раскрыты Flags 0x012 (SYN, ACK)](screenshots/02-tcp-syn-ack.png)
+
+### 3. UDP
+
+В пакете № 4481 раскрыт раздел User Datagram Protocol: порт источника — 19318, порт получателя — 57147. Длина UDP-датаграммы — 230 байт, из них 8 байт занимает заголовок и 222 байта — данные. UDP не имеет TCP-флагов SYN и ACK.
+
+![UDP-пакет № 4481: раскрыты порты, длина и полезная нагрузка](screenshots/03-udp.png)
+
+## Вывод
+
+Представлены три скриншота по заданию: TCP с ACK, TCP с SYN и ACK, а также UDP с раскрытым заголовком. Два TCP-пакета имеют разные наборы флагов; UDP-пакет показывает передачу датаграммы без установления TCP-соединения.
