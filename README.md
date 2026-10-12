@@ -1,30 +1,21 @@
-# Компьютерные сети
+# Практическая работа №14 — DNS и веб-сервер
 
-Репозиторий содержит учебные задания, схемы сетей и конспекты. Каждая учебная ветка посвящена отдельной работе и имеет собственный README с описанием материалов и результатов.
+**Задание:** построить сеть из пяти компьютеров и одного сервера с сайтом, настроить DNS и представить файл проекта и скриншоты в Git.
 
-## Навигация по веткам
+## Реализация
 
-| Ветка | Тема |
-|---|---|
-| [lesson_2](https://github.com/Resolushh/Computer-networks/tree/lesson_2) | Сетевые неисправности и уровни OSI |
-| [lesson_3](https://github.com/Resolushh/Computer-networks/tree/lesson_3) | Захват и разбор трафика в Wireshark |
-| [lesson_4](https://github.com/Resolushh/Computer-networks/tree/lesson_4) | MAC-адреса, коммутация и поиск неисправностей |
-| [lesson_5](https://github.com/Resolushh/Computer-networks/tree/lesson_5) | Расчёт маски подсети и построение сети |
-| [lesson_6](https://github.com/Resolushh/Computer-networks/tree/lesson_6) | Проверка ping и прохождение ICMP |
-| [lesson_7](https://github.com/Resolushh/Computer-networks/tree/lesson_7) | Правила брандмауэра для Packet Tracer |
-| [lesson_8](https://github.com/Resolushh/Computer-networks/tree/lesson_8) | Деление IPv4-сетей на подсети |
-| [lesson_9](https://github.com/Resolushh/Computer-networks/tree/lesson_9) | Топологии с маршрутизаторами |
-| [lesson_11](https://github.com/Resolushh/Computer-networks/tree/lesson_11) | Работа по теме RIP и проверка связи |
-| [lesson_12](https://github.com/Resolushh/Computer-networks/tree/lesson_12) | Конспект по DHCP |
-| [lesson_13](https://github.com/Resolushh/Computer-networks/tree/lesson_13) | NAT и доступ к локальному веб-серверу |
-| [practise_work](https://github.com/Resolushh/Computer-networks/tree/practise_work) | Самостоятельная работа по основам сетей |
+В Cisco Packet Tracer пять ПК и сервер подключены к коммутатору Cisco 2960. Сервер `192.168.1.10` обслуживает DNS и HTTP. Запись `www.site.test → 192.168.1.10` обеспечивает доступ к сайту по адресу `http://www.site.test`.
 
-## Просмотр работы
+На PC0 сайт открывается по имени, а проверки `ping 192.168.1.10` и `ping www.site.test` проходят без потерь пакетов.
 
-Выберите ветку в интерфейсе GitHub или переключитесь на неё локально, например:
+## Файлы
 
-```bash
-git switch lesson_13
-```
+- [DNS_site.pkt](DNS_site.pkt) — схема и настройки сети; открыть в Cisco Packet Tracer.
+- [scheme.png](scheme.png) — топология и открытый сайт.
+- [ping.png](ping.png) — проверка связи по IP и доменному имени.
 
-В README каждой ветки описаны тема, ход работы и результаты. Изображения показывают сетевые схемы и проверки связи, а PDF и Markdown содержат конспекты, расчёты и ответы на задания.
+## Скриншоты
+
+![Схема сети и работающий сайт](scheme.png)
+
+![Проверка связи и разрешения доменного имени](ping.png)
