@@ -16,7 +16,6 @@
 
 - [Network_hw.pdf](Network_hw.pdf) — расчёты и таблица подсетей.
 
-[Все занятия](https://github.com/Resolushh/Computer-networks/blob/main/README.md)
 
 ## Навигация
 
