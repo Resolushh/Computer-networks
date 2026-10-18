@@ -19,3 +19,6 @@
 ![Схема сети и работающий сайт](scheme.png)
 
 ![Проверка связи и разрешения доменного имени](ping.png)
+
+[Все занятия](https://github.com/Resolushh/Computer-networks/blob/main/README.md)
+
