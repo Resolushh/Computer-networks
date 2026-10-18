@@ -20,7 +20,6 @@
 
 ![Проверка связи и разрешения доменного имени](ping.png)
 
-[Все занятия](https://github.com/Resolushh/Computer-networks/blob/main/README.md)
 
 ## Навигация
 
