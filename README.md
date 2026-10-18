@@ -17,3 +17,6 @@
 | TCP и UDP | [Транспортный уровень и протоколы TCP/UDP](tcp.udp1.pptx) |
 | TCP/UDP | [Порты, соединения и передача данных](tcp.udp.2.pptx) |
 | TCP/IP | [Транспортный уровень стека TCP/IP](tcp.udp.3.ppt) |
+
+[Все занятия](https://github.com/Resolushh/Computer-networks/blob/main/README.md)
+
