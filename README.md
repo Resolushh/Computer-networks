@@ -18,7 +18,6 @@
 
 В Wireshark найдены два TCP-пакета с разными флагами: ACK и SYN, ACK. Также показан UDP-пакет с раскрытыми параметрами.
 
-[Все занятия](https://github.com/Resolushh/Computer-networks/blob/main/README.md)
 
 ## Навигация
 
