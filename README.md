@@ -26,3 +26,7 @@
 
 [Все занятия](https://github.com/Resolushh/Computer-networks/blob/main/README.md)
 
+## Навигация
+
+[Все занятия](https://github.com/Resolushh/Computer-networks/blob/main/README.md)
+
