@@ -17,3 +17,6 @@
 ## Результат
 
 Подтверждена связь PC1 и PC5 через маршрутизаторы R1 и R2. Журнал Simulation показывает прохождение ICMP-запроса и ответа, а статус `Successful` фиксирует успешный обмен.
+
+[Все занятия](https://github.com/Resolushh/Computer-networks/blob/main/README.md)
+
