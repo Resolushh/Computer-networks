@@ -6,6 +6,7 @@
 
 | Ветка | Тема |
 |---|---|
+| [theory](https://github.com/Resolushh/Computer-networks/tree/theory) | Презентации по IPv4, DHCP, DNS, TCP и UDP |
 | [lesson_2](https://github.com/Resolushh/Computer-networks/tree/lesson_2) | Сетевые неисправности и уровни OSI |
 | [lesson_3](https://github.com/Resolushh/Computer-networks/tree/lesson_3) | Захват и разбор трафика в Wireshark |
 | [lesson_4](https://github.com/Resolushh/Computer-networks/tree/lesson_4) | MAC-адреса, коммутация и поиск неисправностей |
@@ -32,6 +33,4 @@ git switch lesson_13
 ```
 
 В README каждой ветки описаны тема, ход работы и результаты. Изображения показывают сетевые схемы и проверки связи, а PDF и Markdown содержат конспекты, расчёты и ответы на задания.
-
-
 
