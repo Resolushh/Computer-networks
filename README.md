@@ -18,7 +18,6 @@
 
 Разобрана структура пакета от Ethernet-кадра до UDP-данных. Скриншот иллюстрирует просмотр заголовков, адресов, портов и содержимого пакета в Wireshark.
 
-[Все занятия](https://github.com/Resolushh/Computer-networks/blob/main/README.md)
 
 ## Навигация
 
