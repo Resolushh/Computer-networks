@@ -15,3 +15,6 @@
 - [Конспект по DHCP](<Конспект_ Протокол DHCP (Dynamic Host Configuration Protocol).pdf>) — четырёхстраничный теоретический материал.
 
 Конспект систематизирует процесс получения сетевых параметров, управление арендой адресов и работу DHCP в нескольких подсетях.
+
+[Все занятия](https://github.com/Resolushh/Computer-networks/blob/main/README.md)
+
