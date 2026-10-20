@@ -22,6 +22,7 @@
 | [lesson_15](https://github.com/Resolushh/Computer-networks/tree/lesson_15) | Транспортный уровень: TCP и UDP |
 | [lesson_16](https://github.com/Resolushh/Computer-networks/tree/lesson_16) | Анализ TCP-флагов и UDP в Wireshark: три скриншота |
 | [lesson_17](https://github.com/Resolushh/Computer-networks/tree/lesson_17) | HTTP: методы, заголовки и запросы к API |
+| [lesson_18](https://github.com/Resolushh/Computer-networks/tree/lesson_18) | Практическая работа: настройка роутера для пяти компьютеров в разных комнатах |
 | [practise_work](https://github.com/Resolushh/Computer-networks/tree/practise_work) | Самостоятельная работа по основам сетей |
 
 ## Просмотр работы
@@ -33,4 +34,5 @@ git switch lesson_13
 ```
 
 В README каждой ветки описаны тема, ход работы и результаты. Изображения показывают сетевые схемы и проверки связи, а PDF и Markdown содержат конспекты, расчёты и ответы на задания.
+
 
