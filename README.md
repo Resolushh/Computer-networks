@@ -37,6 +37,7 @@
 | [lesson_17](https://github.com/Resolushh/Computer-networks/tree/lesson_17) | HTTP: методы, заголовки и запросы к API |
 | [lesson_18](https://github.com/Resolushh/Computer-networks/tree/lesson_18) | Практическая работа: настройка роутера для пяти компьютеров в разных комнатах |
 | [practise_work](https://github.com/Resolushh/Computer-networks/tree/practise_work) | Самостоятельная работа по основам сетей |
+| [exam](https://github.com/Resolushh/Computer-networks/tree/exam) | Экзамен, билет № 6: IPv4, DHCP, маршрутизация, PAT, DNS и HTTP в Cisco Packet Tracer |
 
 ## Просмотр работы
 
